@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- TITULO -->
+    <title>Model Import</title>
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/b94f2208f0.js" crossorigin="anonymous"></script>
+
+    <!--ICON-FONT-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <!-- LOGO -->
+    <link rel="icon" type="image/x-icon" href="imagenes/logonuevo.jpeg">
+
+    <!-- TIPOGRAFIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="imagenes/logonuevo.jpeg" alt="Logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                        <li class="nav-item">
+                            <a class="nav-link active pr-3 mx-1" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active pr-3 mx-1" href="paginas/comocomprar.html">Comprar</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active pr-3 mx-1" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#Smartwach">Smartwach</a></li>
+                                <li><a class="dropdown-item" href="#auriculares">Auriculares</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active pr-3 mx-1" href="paginas/preguntasfrecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active pr-3 mx-1" href="paginas/contactanos.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+<main>
+    <div class="Categorias-productos">
+        <a href="#Smartwach">
+            <img src="imagenes/imagensmartportada.webp" alt="Reloj Portada" class="my-3">
+            <h1 class="text-center text-uppercase my-3 texto">SmartWach</h1>
+        </a>
+        <a href="#auriculares">
+            <img src="imagenes/imagenauriculares.jpg" alt="Auriculares Portada" class="my-3">
+            <h1 class="text-center text-uppercase my-3 texto">Auriculares Inalambricos</h1>
+        </a>
+    </div>
+    <hr>
+    <section>
+        <h1 class="text-center text-uppercase my-3 titulo-productos">Catalogo de Productos</h1>
+        <article>
+            <div class="container">
+                <a name="Smartwach"></a>
+                <h2 class="text-center text-uppercase my-3 fs-2  titulo-productos">SmartWatch</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <a name="Smartwach"></a>
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/t500.jpeg" alt="t500negro">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos">SmartWatch T500 Plus - Negro
+                                </h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$4.199</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$3.799</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$1.266</b></p>
+                                <p class="d-productos texto-productos">Smartwatch Reloj Inteligente Hiwatch T500+
+                                    Posee altavoz y
+                                    micrófono para realizar llamadas, compatible con dispositivos bluetooth.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('SmartWatch T500 Plus - Negro')" href="#" class="btn btn boton"><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/t500-blanco2.jpeg" alt="t500blanco">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos">SmartWatch T500 Plus - Blanco
+                                </h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$4.199</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$3.799</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$1.266</b></p>
+                                <p class="d-productos texto-productos">Smartwatch Reloj Inteligente Hiwatch T500+
+                                    Posee altavoz y
+                                    micrófono para realizar llamadas, compatible con dispositivos bluetooth.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a  onclick="agregarAlCarrito('SmartWatch T500 Plus - Blanco')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/t500rosa.jpg" alt="t500rosa">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos">SmartWatch T500 Plus - Rosa
+                                </h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$4.199</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$3.799</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$1.266</b></p>
+                                <p class="d-productos texto-productos">Smartwatch Reloj Inteligente Hiwatch T500+
+                                    Posee altavoz y
+                                    micrófono para realizar llamadas, compatible con dispositivos bluetooth.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('SmartWatch T500 Plus - Rosa')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/d20negro.jpg" alt="d20snegro">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente D20s -
+                                    Negro</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.899</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.499</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$833,33</b></p>
+                                <p class="d-productos texto-productos">Smartband D20s. Descansá, rendí más.
+                                    Gracias a la función de monitoreo de sueño podrás aprender más acerca de tus
+                                    hábitos.
+                                </p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente D20s -Negro')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/d20sblanco.jpg" alt="d20sblanco">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente D20s -
+                                    Blanco</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.899</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.499</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$833,33</b></p>
+                                <p class="d-productos texto-productos">Smartband D20s. Descansá, rendí más.
+                                    Gracias a la función de monitoreo de sueño podrás aprender más acerca de tus
+                                    hábitos.
+                                </p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente D20s -Blanco')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/d20srosa.jpeg" alt="d20srosa">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente D20s -
+                                    Rosa</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.899</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.499</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$833,33</b></p>
+                                <p class="d-productos texto-productos">Smartband D20s. Descansá, rendí más.
+                                    Gracias a la función de monitoreo de sueño podrás aprender más acerca de tus
+                                    hábitos.
+                                </p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente D20s -Rosa')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/m5negro.jpg" alt="m5negro">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente M5 PRO -
+                                    Negro</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.399</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.999</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Smartband Smart M5. Registro de
+                                    ejercicios, recuento
+                                    de pasos,
+                                    distancia, cálculo de calorías, envío de mensajes, entre otras funciones.
+                                </p>
+
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente M5 PRO - Negro')" href="#" class="btn btn boton"><i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/m5blanco.jpg" alt="m5blanco">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente M5 PRO -
+                                    Blanco</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.399</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.999</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Smartband Smart M5. Registro de
+                                    ejercicios, recuento
+                                    de pasos,
+                                    distancia, cálculo de calorías, envío de mensajes, entre otras funciones.
+                                </p>
+
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente M5 PRO - Blanco')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/m5rosa.jpg" alt="m5rosa">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Smartband Inteligente M5 PRO -
+                                    Rosa</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.399</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.999</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin interés
+                                    de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Smartband Smart M5. Registro de
+                                    ejercicios, recuento
+                                    de pasos,
+                                    distancia, cálculo de calorías, envío de mensajes, entre otras funciones.
+                                </p>
+
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a onclick="agregarAlCarrito('Smartband Inteligente M5 PRO - Rosa')" href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <a name="auriculares"></a>
+                <h2 class="text-center text-uppercase my-3 fs-2  titulo-productos">Auriculares Inalambricos</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/i12negro.jpg" alt="i12negro">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos">Auriculares Bluetooth I12 -
+                                    Negro</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.299</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.899</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares bluetooth I12 con acabado
+                                    en varios
+                                    colores,
+                                    estuche
+                                    de carga inalámbrica brindan una experiencia innovadora.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a name="auricularesi12"></a>
+                            <img src="../imagenes/productos/i12white.jpg" alt="i12blanco">
+                            <div class="card-body">
+                                <h3 class="text-center card-title titulo-productos"> Auriculares Bluetooth I12
+                                    - Blanco</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.299</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.899</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares bluetooth I12 con acabado
+                                    en varios
+                                    colores,
+                                    estuche
+                                    de carga inalámbrica brindan una experiencia innovadora.</p>
+
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/i12rosa.jpg" alt="i12rosa">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos"> Auriculares Bluetooth I12
+                                    - Rosa</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.299</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$1.899</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$666,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares bluetooth I12 con acabado
+                                    en varios
+                                    colores,
+                                    estuche
+                                    de carga inalámbrica brindan una experiencia innovadora.</p>
+
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/i12pronegro.jpg" alt="i12pronegro">
+                            <div class="card-body">
+
+                                <h3 class="text-center card-title  titulo-productos">Auriculares Bluetooth I12
+                                    PRO - Negro</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.599</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.199</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$733,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares In Ear Bluetooth I12 Pro,
+                                    compatibilidad
+                                    con
+                                    dispositivo Bluetooth, tecnología táctil de encendido, estuche
+                                    recargable.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a name="auricularespro"></a>
+                            <img src="../imagenes/productos/i12problanco.jpg" alt="i12problanco">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos">Auriculares Bluetooth I12
+                                    PRO - Blanco</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.599</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.199</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$733,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares In Ear Bluetooth I12 Pro,
+                                    compatibilidad
+                                    con
+                                    dispositivo Bluetooth, tecnología táctil de encendido, estuche
+                                    recargable.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a name="auriculares"></a>
+                        <div class="card shadow-sm">
+                            <img src="../imagenes/productos/i12prorosa.jpg" alt="i12prorosa">
+                            <div class="card-body">
+                                <h3 class="text-center card-title  titulo-productos">Auriculares Bluetooth I12
+                                    PRO - Rosa</h3>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Antes</b><del><br><b>$2.599</b><br></del>
+                                </p>
+                                <p class="text-center pnotachado fs-4 texto-productos">
+                                    <b>Ahora</b><br><b>$2.199</b><br>
+                                </p>
+                                <p class="text-center fs-5 texto-productos"><b class="p-1">3</b>cuotas sin
+                                    interés de<b class="p-1">$733,33</b></p>
+                                <p class="d-productos texto-productos">Auriculares In Ear Bluetooth I12 Pro,
+                                    compatibilidad
+                                    con
+                                    dispositivo Bluetooth, tecnología táctil de encendido, estuche
+                                    recargable.</p>
+                                <div class="d-flex justify-content-between aling-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn boton titulo-productos">Descripción</a>
+                                    </div>
+                                    <a href="#" class="btn btn boton"><i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <div class="figura">
+                    <a href="#">
+                        <h2 class="hfooter">ENCONTRANOS EN</h2>
+                        <iframe class="mapa "
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.478565497767!2d-122.032905584695!3d37.33117737984255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b7176a341d%3A0x4ae040c5bfc59fcd!2s1%20Infinite%20Loop%2C%20Cupertino%2C%20CA%2095014%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1650232208110!5m2!1ses!2sar"
+                            width="273" height="220" style="border:0;" title="mapamarca" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h2 class="hfooteer">SOBRE NOSOTROS</h2>
+                <p class="text">Somos una tienda online de productos tecnológicos. Nos caracterizamos por seleccionar y
+                    ofrecer
+                    la mejor variedad de modelos y así encontrar todo lo que buscan en un solo lugar.</p>
+                <p class="text"> Nuestra atención personalizada hace que día a día nos elijan y nos sigan eligiendo.
+                    Nuestra meta es seguir creciendo y ampliar nuestra variedad de productos.
+                </p>
+            </div>
+            <div class="box">
+                <h2 class="hfooter">SIGAMOS CONECTADOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/model.import/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>Model Import</b> - Todos los Derechos Reservados.</small>
+        </div </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+</html>

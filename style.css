@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+.logo {
+    width: 105px;
+    height: 100px;
+}
+
+.header {
+    background-color: #0d2033;
+}
+
+ul>li>a {
+    color: white;
+    transition: all 300ms ease;
+    font-size: 24px;
+}
+
+ul>li>a:hover {
+    box-shadow: 0 0 10px #427AC4, 0 0 40px #427AC4, 0 0 80px #427AC4;
+    transition-delay: 0s;
+    border-radius: 5px;
+}
+
+.imagen-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex,
+.Categorias-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Categorias-productos img {
+    width: 100%;
+    height: 100%;
+}
+
+.boton {
+    background-color: white;
+    color: white;
+}
+
+.btn {
+    position: relative;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    background-color: #0d2033;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #0d2033;
+    margin-bottom: 40px;
+    z-index: 0;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #0d2033;
+    box-shadow: 0 0 10px #0d2033, 0 0 40px #0d2033, 0 0 80px #0d2033;
+    transition-delay: 0s;
+    color: white;
+}
+
+/* FOOTER */
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.pie-pagina .grupo-1 .box .figura img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0d2033;
+    padding: 10px;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
+
+    .hfooter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .red-social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .figura {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapa {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
