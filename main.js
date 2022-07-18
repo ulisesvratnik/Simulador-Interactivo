@@ -1,93 +1,43 @@
- let carritoDeCompra = "Model Import"
+class Producto {
+    constructor(id, modelo, color, precio, stock) {
+        this.id = id
+        this.modelo = modelo
+        this.color = color
+        this.precio = precio
+        this.stock = stock
 
-
-function agregarAlCarritoT500(producto, stock) {
-    const tenemosStock = validarStock(stock);
-    if(tenemosStock === 'Tenemos stock'){
-        console.log('Agregas el producto al carrito: ' + producto);
-    }else{
-        console.log('Lo sentimos no tenemos en stock el ' + producto);
+        if (stock == 0) {
+            console.log('Lamentemos mucho informarle que no tenemos stock del modelo solicitado')
+        }
     }
 }
 
-function validarStock(stockDelProducto) {
-    if(stockDelProducto > 0){
-        return 'Tenemos stock';
-    }else{
-        return 'Disculpe no tenemos en stock';
+const productos = []
+
+productos.push (new Producto(2020, "SmartWatch T500 Plus", "Negro", 3799, 17))
+productos.push (new Producto(2021, "Smartband Inteligente D20s", "Blanco", 2499, 7))
+productos.push (new Producto(2022, "Smartband Inteligente M5 PRO", "Rosa", 1999, 0))
+
+const carritoDeCompra = []
+
+function agregarAlCarrito(productos){
+    carritoDeCompra.push(productos)
+    console.log(productos)
+}
+
+agregarAlCarrito({id: 2020, modelo: "SmartWatch T500 Plus", color: "Negro", precio: 3799, stock: 17})
+agregarAlCarrito({id: 2021, modelo: "Smartband Inteligente D20s", color: "Blanco", precio: 2499, stock: 7})
+agregarAlCarrito({id: 2022, modelo: "Smartband Inteligente M5 PRO", color: "Rosa", precio: 1999, stock: 0})
+
+function borrarProductoDelCarrito(idDelProducto) {
+    const index = carritoDeCompra.findIndex((producto) => producto.id === idDelProducto);
+
+    if (index !== -1) {
+        carritoDeCompra.splice(index, 1);
     }
+
+    console.log(carritoDeCompra);
 }
-
-const stockQueTieneElProducto = alert("Del modelo T500 Negro tenemos en total 23 unidades")
-const cantidadQueDeseasDelProducto = prompt("¿Usted Cuantas unidades de este modelo Deseas?")
-
-agregarAlCarritoT500('SmartWatch T500 Plus - Negro', stockQueTieneElProducto, cantidadQueDeseasDelProducto);
-
-function validarStock(cantidad) {
-    if(23 >= cantidadQueDeseasDelProducto){
-        return 'Tenemos stock';
-    }else{
-        return 'Disculpe no tenemos en stock';
-    }
-}
-
-function agregarAlCarrito(producto, stock) {
-    const tenemosStock = validarStock(stock);
-    if(tenemosStock === 'Tenemos stock'){
-        console.log('Agregas el producto al carrito: ' + producto);
-    }else{
-        console.log('Lo sentimos no tenemos en stock el ' + producto);
-    }
-}
-
-function validarStock(stockDelProducto) {
-    if(stockDelProducto > 0){
-        return 'Tenemos stock';
-    }else{
-        return 'Disculpe no tenemos en stock';
-    }
-}
-
-agregarAlCarrito('SmartWatch T500 Plus - Blanco', 10);
-agregarAlCarrito('SmartWatch T500 Plus - Rosa', 0);
-
-agregarAlCarrito('Smartband Inteligente D20s - Negro', 3);
-agregarAlCarrito('Smartband Inteligente D20s - Blanco', 0);
-agregarAlCarrito('Smartband Inteligente D20s - Rosa', 9);
-
-agregarAlCarrito('Smartband Inteligente M5 PRO - Negro', 11);
-agregarAlCarrito('Smartband Inteligente M5 PRO - Blanco', 0);
-agregarAlCarrito('Smartband Inteligente M5 PRO - Rosa', 4); 
-
-
-/* **************************************************************************************************** */
-
-let nombre = prompt ("Ingrese nombre y apellido del alumno");
-let notas1 =parseInt(prompt("Ingrese la 1er nota del alumno"));
-let notas2 =parseInt(prompt("Ingrese la 2er nota del alumno"));
-let notas3 =parseInt(prompt("Ingrese la 3er nota del alumno"));
-
-let listadoNotas = [notas1, notas2, notas3];
-
-function contadorDeNotas(listadoNotas){
-    let contadorNotas=0;
-    for (let i = 0; i < 3; i++){
-        contadorNotas += listadoNotas[i];
-    }
-    return contadorNotas;
-}
-
-let contador = contadorDeNotas(listadoNotas);
-
-function sacarPromedio(contador){
-    let promedio = Math.round(contador/3);
-    return promedio;
-}
-
-let promedio1 = sacarPromedio(contador);
-
-if (promedio1 > 6){
-    alert ("La nota promedio de" + nombre + " " + "es de: " + promedio1 + "." + " Esta aprobado.")  
-}else{
-    alert ("La nota promedio de" + nombre + " " + "es de: " + promedio1 + "." + " Esta desaprobado.")  
-}
+borrarProductoDelCarrito(2020);
+borrarProductoDelCarrito(2024);
+borrarProductoDelCarrito(2021);
